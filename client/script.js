@@ -73,6 +73,15 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   //fetch data
+  // const response = await fetch("http://localhost:5000", {
+  //   method: "POST",
+  //   headers: {
+  //     "content-Type": "application/json"
+  //   },
+  //   body: JSON.stringify({
+  //     prompt: data.get("prompt")
+  //   })
+  // })
   const response = await fetch("https://lnm-gpt-20mq.onrender.com/", {
     method: "POST",
     headers: {
